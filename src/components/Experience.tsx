@@ -256,7 +256,6 @@ export default function Experience() {
           <motion.canvas 
             ref={canvasRef} 
             className="relative z-10 w-full h-full origin-top"
-            style={{ imageRendering: "high-quality" }}
             animate={{ 
               filter: `hue-rotate(${activeColor.hueRotate}deg)`,
               display: activeColor.isWhite ? "none" : "block"
