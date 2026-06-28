@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Search, Menu, ShoppingBag } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -20,20 +21,29 @@ export default function Header() {
         </button>
       </div>
 
-      <div className="text-xl font-medium tracking-[0.3em] uppercase">
-        FT GUYS STORE
-      </div>
+      <a href="https://jkbaav-v4.myshopify.com/" className="relative h-12 w-12 md:h-20 md:w-20 flex items-center justify-center">
+        <Image 
+          src="/logo.png" 
+          alt="FT Guys Logo" 
+          fill 
+          sizes="(max-width: 768px) 48px, 80px"
+          className="object-contain"
+        />
+      </a>
 
       <div className="flex items-center gap-6">
-        <div className="text-sm tracking-widest hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
+        <a href="https://jkbaav-v4.myshopify.com/" className="text-xs font-mono tracking-widest hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
+          SHOP
+        </a>
+        <div className="text-xs font-mono tracking-widest hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
           ACCOUNT
         </div>
-        <button className="relative hover:opacity-70 transition-opacity">
+        <a href="https://jkbaav-v4.myshopify.com/" className="relative hover:opacity-70 transition-opacity">
           <ShoppingBag className="w-5 h-5" />
           <span className="absolute -top-2 -right-2 w-4 h-4 bg-white text-black text-[10px] flex items-center justify-center rounded-full font-bold">
             0
           </span>
-        </button>
+        </a>
       </div>
     </motion.header>
   );
