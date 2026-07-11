@@ -1,4 +1,4 @@
-import Experience from "@/components/Experience";
+import HeroSection from "@/components/HeroSection";
 import Header from "@/components/Header";
 import AboutSection from "@/components/AboutSection";
 import Features from "@/components/Features";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="bg-luxury-black min-h-screen">
       <Header />
-      <Experience />
+      <HeroSection />
       <AboutSection />
       <Features />
       <TrendingProducts />
