@@ -18,13 +18,13 @@ const TESTIMONIALS = [
   {
     id: 2,
     quote: "Finally a brand that understands luxury streetwear. Washed it a dozen times and the fabric still looks brand new.",
-    name: "Sarah K.",
+    name: "Sarah",
     role: "Verified Buyer"
   },
   {
     id: 3,
     quote: "Insane quality. The minimalist design combined with the thick cotton makes it the perfect everyday statement piece.",
-    name: "Jordan T.",
+    name: "Ravi",
     role: "Verified Buyer"
   }
 ];
@@ -55,7 +55,8 @@ export default function Testimonials() {
           <div>
             <p className="font-mono text-sm tracking-widest text-luxury-muted uppercase mb-4">Cult Following</p>
             <h2 className="text-4xl md:text-6xl lg:text-[5vw] leading-[0.9] font-display font-black uppercase tracking-tighter">
-              Verified <br className="hidden md:block" /> Experiences.
+              <span className="text-white">Verified</span> <br className="hidden md:block" />{" "}
+              <span className="text-[#EBB30A]">Experiences.</span>
             </h2>
           </div>
           <p className="font-sans text-luxury-muted max-w-sm text-lg md:text-right">

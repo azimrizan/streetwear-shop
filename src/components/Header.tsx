@@ -13,12 +13,12 @@ export default function Header() {
       className="fixed top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between mix-blend-difference text-white pointer-events-auto"
     >
       <div className="flex items-center gap-6">
-        <button className="hover:opacity-70 transition-opacity">
+        <a href="https://jkbaav-v4.myshopify.com/" className="hover:opacity-70 transition-opacity">
           <Menu className="w-6 h-6" />
-        </button>
-        <button className="hover:opacity-70 transition-opacity">
+        </a>
+        <a href="https://jkbaav-v4.myshopify.com/" className="hover:opacity-70 transition-opacity">
           <Search className="w-5 h-5" />
-        </button>
+        </a>
       </div>
 
       <a href="https://jkbaav-v4.myshopify.com/" className="relative h-12 w-12 md:h-20 md:w-20 flex items-center justify-center">
@@ -35,9 +35,9 @@ export default function Header() {
         <a href="https://jkbaav-v4.myshopify.com/" className="text-xs font-mono tracking-widest hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
           SHOP
         </a>
-        <div className="text-xs font-mono tracking-widest hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
+        <a href="https://jkbaav-v4.myshopify.com/" className="text-xs font-mono tracking-widest hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
           ACCOUNT
-        </div>
+        </a>
         <a href="https://jkbaav-v4.myshopify.com/" className="relative hover:opacity-70 transition-opacity">
           <ShoppingBag className="w-5 h-5" />
           <span className="absolute -top-2 -right-2 w-4 h-4 bg-white text-black text-[10px] flex items-center justify-center rounded-full font-bold">

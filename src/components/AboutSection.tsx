@@ -53,7 +53,7 @@ export default function AboutSection() {
             </h2>
           </div>
           <div className="overflow-hidden">
-            <h2 className="reveal-text text-6xl md:text-[7vw] leading-[0.9] font-display font-black uppercase tracking-tighter text-white">
+            <h2 className="reveal-text text-6xl md:text-[7vw] leading-[0.9] font-display font-black uppercase tracking-tighter text-[#EBB30A]">
               Experiences.
             </h2>
           </div>

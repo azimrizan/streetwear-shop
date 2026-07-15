@@ -88,7 +88,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main Center Stage */}
-      <div className="relative z-20 flex-1 w-full flex flex-col items-center justify-center px-4 pt-16 sm:pt-20 pb-4 overflow-hidden">
+      <div className="relative z-20 flex-1 w-full flex flex-col items-center justify-center px-4 pt-8 sm:pt-10 pb-4 overflow-hidden">
         {/* Touch / Swipe Drag area for Mobile & Desktop */}
         <motion.div
           className="absolute inset-0 z-30 cursor-grab active:cursor-grabbing"
@@ -104,6 +104,23 @@ export default function HeroSection() {
             }
           }}
         />
+
+        {/* PARALLEL CLOTHING UNIVERSE Tagline in Gap above Melvin's Hair */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative z-40 w-full text-center mb-3 sm:mb-5 px-4 pointer-events-none"
+        >
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-display tracking-tight sm:tracking-normal uppercase select-none leading-none">
+            <span className="text-white drop-shadow-[0_4px_20px_rgba(255,255,255,0.25)] mr-2 sm:mr-3">
+              PARALLEL CLOTHING
+            </span>
+            <span className="text-[#EBB30A]">
+              UNIVERSE.
+            </span>
+          </h2>
+        </motion.div>
 
         {/* Centered Melvin Photo Frame IN FRONT of Pure White FTG / UYS Text (z-20) */}
         <div className="relative z-20 w-full max-w-5xl h-[52vh] sm:h-[60vh] md:h-[65vh] flex items-center justify-center pointer-events-none">
@@ -135,6 +152,22 @@ export default function HeroSection() {
             Shop Now
           </a>
         </div>
+
+        {/* Manifesto Text under Shop Now */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="relative z-40 mt-4 sm:mt-5 text-center max-w-3xl px-4 pointer-events-none"
+        >
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-sans font-normal tracking-[0.015em] sm:tracking-[0.025em] text-[#EBB30A] leading-relaxed">
+            <span className="block sm:inline">We don’t judge clothes.</span>{" "}
+            <span className="block sm:inline">We just make you feel.</span>
+            <span className="block mt-1 sm:mt-1.5">
+              Not just what you wear. It’s how you feel when you wear it.
+            </span>
+          </p>
+        </motion.div>
       </div>
 
       {/* Responsive Apple-Style Bottom Dots Indicator (z-30) */}
